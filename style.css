@@ -1,23 +1,63 @@
 
-/*#lightbox
-{
-  height: 0px;
-  width: 0px;
-  overflow: hidden;
+#lightbox {
   position: fixed;
   top: 0px;
   left: 0px;
-  transition: all 3s ease-in-out;
+  width: 0px;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s ease-in-out;
 }
-#lightbox:target
+
+#content-box {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+#content-box a
 {
-  
-  background-color: cyan;
-  height: 30%;
-  width: 30%;
-  top :50%;
-  left: 50%;
-}*/
+  color:white;
+  float: right;
+  font-family: Pacifico;
+  font-size: 33px;
+  text-decoration: none;
+}
+#content-box a:hover{
+  font-size: 40px;
+  text-decoration: underline;
+ 
+}
+
+#lightbox:target {
+  height: 100%;
+  width: 100%;
+}
+.use_cal{
+  margin-top: -560px;
+  border: 5px solid white;
+  padding:0px 20px;
+  border-radius: 100px;
+  background-color: black;
+ 
+}
+.use_cal :hover{
+   
+  opacity: 0.5;
+ }
+.use_cal a
+{
+   color: white;
+   font-size: 270%;
+   font-family: Pacifico;
+   text-decoration: none;
+   
+}
+
 body{
 
   display: flex;
@@ -25,15 +65,17 @@ body{
   justify-content: center;
   height: 100vh;
   width: 100vw; 
-  background-image: url(snow.jpg);
+  background-image: url(wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .container
 {
-  background-color: #cccccc;
+  background-color: #5c5b59;
   height: 60%;
   width: 30%;
+  margin: auto;
+  margin-top: 150px;
   border: 2px solid black;
   min-height: 300px;
   min-width: 250px;
@@ -47,10 +89,10 @@ body{
 }
 #display
 {
-  background-color:lightgray;
+  background-color:#858381;
   height: 80px;
   width: 100%;
-  border: 2px solid black;
+  border: 8px solid #5c5b59;
   
 
 }
@@ -77,6 +119,7 @@ body{
   width:48.9% ;
 }
 .btn:hover{
-box-shadow: 0px 0px 0px 3px lightblue;
-background-color: lightblue;
+box-shadow: 0px 0px 0px 3px white;
+background-color: #c9c8c7;
+padding: 2px;
 }
